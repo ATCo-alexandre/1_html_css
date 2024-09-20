@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML 5</title>
+</head>
+<body>
+    <h1>
+        Elementos COLOR, RANGE e FILE em HTML
+    </h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+                <legend>Elemento COLOR</legend>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+        </fieldset>
+        <fieldset>
+                <legend>Elemento RANGE</legend>
+                <label for="inivel">Nível de Satisfação: </label>
+                <input type="range" name="nivel" id="inivel" min="1" max="10" value="1">
+        </fieldset>
+        <fieldset>
+            <legend>Elemento FILE</legend>
+            <label for="ifoto">Foto do Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
